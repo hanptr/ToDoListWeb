@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+hr{
+    margin-top: 25px;
+    margin-bottom: 80px;
+    border: 0;
+    border-bottom:5px dotted #e0d6ff;
+    
+    animation: separator-width 1.5s ease-out forwards;
+}
+
+#new-todo-input:hover{
+    cursor: url('../pen-cursor.png'), auto;
+}
+
+.ready{
+    color: greenyellow;
+    text-decoration: line-through;
+
+}
+
+.ready:before{
+    content: "✅ " !important;
+}
+
+ul{
+    list-style: none;
+}
+
+#list li:before{
+    content: "⬜ ";
+}
